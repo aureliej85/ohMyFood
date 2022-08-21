@@ -6,11 +6,11 @@ $tertiaire: #99E2D0;
 $shadowColor: #cacaca;
 $textColor: rgb(63, 63, 63);
 $titreColor: #1c1c1c;
-@mixin titreH2($size) {
+@mixin texte($size, $weight, $color) {
             font-family: Roboto;
             font-size: $size;
-            font-weight: 700;
-            color: $titreColor;    
+            font-weight: $weight;
+            color: $color;    
 }
 
 @mixin btn--gradient {
@@ -70,7 +70,7 @@ $titreColor: #1c1c1c;
         text-align: center;
         box-sizing: border-box;
         &__title {
-            @include titreH2(45px);
+            @include texte(45px, 700, black);
         }
         &__subtitle {
             font-family: Roboto;
@@ -94,7 +94,7 @@ $titreColor: #1c1c1c;
     padding: 100px 40px 100px 40px ;
     background-color: white;
     &__titre {
-        @include titreH2(65px);
+        @include texte(65px, 500, $titreColor);
     }
     &__card {
         display: flex;
@@ -157,7 +157,7 @@ $titreColor: #1c1c1c;
     flex-direction: column;
     padding: 100px 40px 100px 40px ;
     &__titre {
-        @include titreH2(65px);
+        @include texte(65px, 500, $titreColor);
     }
     &__cards {
         margin-top: 60px;
@@ -186,6 +186,12 @@ $titreColor: #1c1c1c;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                @include texte(40px, 300, $textColor);
+
+                h3 {
+                    @include texte(45px, 700, $textColor);
+
+                }
             }
         }
 
