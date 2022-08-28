@@ -148,6 +148,7 @@
 }
 .restaurants__cards__unite {
   width: 100%;
+  margin-bottom: 45px;
   display: flex;
   flex-direction: column;
 }
@@ -157,17 +158,32 @@
 .restaurants__cards__unite__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50px 50px 0 0;
+}
+.restaurants__cards__unite__new {
+  position: absolute;
+  margin-top: 20px;
+  left: 70%;
+  width: 20%;
+  padding: 15px 10px 15px 10px;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 500;
+  color: #50736a;
 }
 .restaurants__cards__unite__caption {
   width: 100%;
-  padding: 20px;
+  padding: 45px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
   font-family: Roboto;
   font-size: 40px;
   font-weight: 300;
@@ -178,4 +194,31 @@
   font-size: 45px;
   font-weight: 700;
   color: rgb(63, 63, 63);
-}/*# sourceMappingURL=smartphone.css.map */
+  margin: 0 0 10px 0;
+}
+.restaurants__cards__unite__caption .fa-heart {
+  font-size: 70px;
+  background: none;
+}
+.restaurants__cards__unite__caption .fa-heart:hover::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+  content: "\f004";
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  /*-webkit-text-fill-color: transparent;*/
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #424141;
+}
+footer div svg {
+  fill: white;
+}/*# sourceMappingURL=style.css.map */

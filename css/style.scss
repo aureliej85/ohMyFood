@@ -166,6 +166,7 @@ $titreColor: #1c1c1c;
 
         &__unite {
             width: 100%;
+            margin-bottom: 45px;
             display: flex;
             flex-direction: column;
         
@@ -179,22 +180,68 @@ $titreColor: #1c1c1c;
                 object-fit: cover;
                 border-radius: 50px 50px 0 0;
             }
+            &__new {
+                position: absolute;
+                margin-top: 20px;
+                left: 70%;
+                width: 20%;
+                padding: 15px 10px 15px 10px;
+                border-radius: 5px;
+                background-color: $tertiaire;
+                text-align: center;
+                @include texte(35px, 500, #50736a);
+            }
             &__caption {
                 width: 100%;
-                padding: 20px;
+                padding: 45px;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 background-color: white;
+                border-radius: 0 0 50px 50px;
                 @include texte(40px, 300, $textColor);
 
                 h3 {
                     @include texte(45px, 700, $textColor);
-
+                    margin: 0 0 10px 0;
                 }
+
+                .fa-heart {
+                    font-size: 70px;
+                    background: none;
+                    
+                    &:hover {
+                        &::before {
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 300;
+                            content: "\f004";
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            color: $primaire;
+                            background: -webkit-linear-gradient($primaire, $secondaire);
+                            
+                            /*-webkit-text-fill-color: transparent;*/
+                        }
+                    }
+                }    
+
+                
             }
         }
 
+    }
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #424141;
+
+    div svg {
+        fill: white;
     }
 }
