@@ -1,14 +1,98 @@
+@use 'style';
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-
-header {
+.header {
     width: 100%;
     display: flex;
     flex-direction: column;
     &__picture {
         width: 100%;
-        height: 300px;
+        height: 550px;
+        box-sizing: border-box;
+
         img {
+            width: 100%;
             object-fit: cover;
         }
     }
+}
+
+.menus {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 120px 120px 0 0;
+    margin-top: -50px;
+    padding: 0 50px 0 50px;
+
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__titleBar{
+        width: 85%;
+        height: 200px;
+        padding: 30px 0 0 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__title {
+            font-family: Shrikhand;
+            font-size: 35px;
+            font-weight: 900;
+        }
+
+        &__icon {
+            font-size: 60px;
+            line-height: 200px;
+        }
+    }
+
+}
+
+.menu {
+
+    margin-bottom: 50px;
+
+    h2{
+        @include style.texte(45px, 300, style.$titreColor);
+        padding-bottom: 10px;
+        margin: 0px;
+        
+    }
+
+    &__line {
+        margin: 10px 0 46px 0;
+        width: 13%;
+        border-bottom: 8px solid style.$tertiaire;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 36px 40px 40px 30px;
+        margin-bottom: 30px;
+        @include style.texte(40px, 300, style.$textColor);
+        box-shadow: 1px 8px 20px 10px #eaeaea; 
+        background-color: white;
+        border-radius: 50px;
+        h3 {
+            margin: 0px 0px 10px 0;
+        }
+        &__price {
+            align-self: flex-end;
+            font-weight: 600;
+        }
+        &__anim {
+            display: none;
+        }
+    }
+
 }
