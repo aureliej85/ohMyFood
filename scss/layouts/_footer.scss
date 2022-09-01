@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #333333;
+  
+    &__title {
+      font-family: Shrikhand;
+      font-size: 45px;
+      color: white;
+    }
+  
+    &__icon {
+      min-width: 50px;
+      min-height: 50px;
+  
+      i {
+          font-size: 30px;
+          padding: 0 20px 0 0;
+      }
+  
+    }
+  
+    
+    ul {
+      padding: 0px;
+      font-family: Roboto;
+      list-style-type: none;
+      font-size: 40px;
+      color: white;
+    }
+  
+    li {
+      padding: 0 0 15px 0;
+    }
+  
+    
+  }

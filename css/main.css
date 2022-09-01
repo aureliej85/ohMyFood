@@ -1,5 +1,244 @@
+@charset "UTF-8";
+
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -35,7 +274,7 @@
 .header__hero {
   width: 100%;
   height: 750px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 50px 30px 50px 30px;
   text-align: center;
   box-sizing: border-box;
@@ -56,7 +295,7 @@
   margin-top: 60px;
   width: 550px;
   height: 120px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 50px;
   border: none;
   font: 400 40px "Roboto";
@@ -67,6 +306,47 @@
 .header .bouton:hover {
   box-shadow: 0px 3px 15px 7px #aaa8a8;
   background-image: linear-gradient(#ff93e1, #a16be0);
+}
+.header__picture {
+  width: 100%;
+  height: 550px;
+  box-sizing: border-box;
+}
+.header__picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #333333;
+}
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 45px;
+  color: white;
+}
+.footer__icon {
+  min-width: 50px;
+  min-height: 50px;
+}
+.footer__icon i {
+  font-size: 30px;
+  padding: 0 20px 0 0;
+}
+.footer ul {
+  padding: 0px;
+  font-family: Roboto;
+  list-style-type: none;
+  font-size: 40px;
+  color: white;
+}
+.footer li {
+  padding: 0 0 15px 0;
 }
 
 .fonctionnement {
@@ -93,7 +373,7 @@
 .fonctionnement__card span {
   min-width: 70px;
   min-height: 70px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50px;
   text-align: center;
   font-family: Roboto;
@@ -105,7 +385,7 @@
 .fonctionnement__card div {
   width: 95%;
   height: 170px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 50px;
   color: rgb(63, 63, 63);
   font-family: Roboto;
@@ -120,7 +400,7 @@
   box-shadow: 1px 8px 20px 10px #aeaeae;
 }
 .fonctionnement__card div:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonctionnement__card div i {
   font-size: 50px;
@@ -130,7 +410,7 @@
 
 .restaurants {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -169,7 +449,7 @@
   width: 20%;
   padding: 15px 10px 15px 10px;
   border-radius: 5px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   text-align: center;
   font-family: Roboto;
   font-size: 35px;
@@ -197,49 +477,22 @@
   color: rgb(63, 63, 63);
   margin: 0 0 10px 0;
 }
-.restaurants__cards__unite__caption .fa-heart {
+.restaurants__cards__unite__caption__icon {
   font-size: 70px;
   background: none;
+  transition: all 0.5s ease-in;
 }
-.restaurants__cards__unite__caption .fa-heart:hover::before {
+.restaurants__cards__unite__caption__icon:hover ::before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 300;
+  font-weight: 900;
   content: "\f004";
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-  color: #9356DC;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  /*-webkit-text-fill-color: transparent;*/
+  color: transparent;
 }
 
-footer {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background-color: #424141;
-}
-footer div svg {
-  fill: white;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.header__picture {
-  width: 100%;
-  height: 550px;
-  box-sizing: border-box;
-}
-.header__picture img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.menus {
+.mainMenus {
   box-sizing: border-box;
   position: absolute;
   width: 100%;
@@ -247,6 +500,23 @@ footer div svg {
   border-radius: 120px 120px 0 0;
   margin-top: -50px;
   padding: 0 50px 0 50px;
+}
+.mainMenus .bouton {
+  align-self: center;
+  margin-top: 20px;
+  width: 550px;
+  height: 120px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 50px;
+  border: none;
+  font: 400 40px "Roboto";
+  color: white;
+  box-shadow: 0px 3px 10px 3px #cacaca;
+  transition: all 0.3s ease-in-out;
+}
+.mainMenus .bouton:hover {
+  box-shadow: 0px 3px 15px 7px #aaa8a8;
+  background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 .menus {
@@ -268,8 +538,17 @@ footer div svg {
   font-weight: 900;
 }
 .menus__titleBar__icon {
-  font-size: 60px;
+  font-size: 70px;
   line-height: 200px;
+}
+.menus__titleBar__icon .fa-heart:hover {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  background: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .menu {
@@ -286,7 +565,7 @@ footer div svg {
 .menu__line {
   margin: 10px 0 46px 0;
   width: 13%;
-  border-bottom: 8px solid #99E2D0;
+  border-bottom: 8px solid #99e2d0;
 }
 .menu__card {
   display: flex;
@@ -311,4 +590,12 @@ footer div svg {
 }
 .menu__card__anim {
   display: none;
-}/*# sourceMappingURL=menus.css.map */
+  align-self: center;
+  text-align: center;
+  background-color: #99e2d0;
+  width: 20%;
+}
+.menu__card:hover .menu__card__anim .fa-circle-check {
+  font-size: 50px;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
