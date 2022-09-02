@@ -10,16 +10,25 @@
       font-family: Shrikhand;
       font-size: 45px;
       color: white;
-    }
+
+      }
+      
+    
   
     &__icon {
-      min-width: 50px;
-      min-height: 50px;
+      display: inline-block;
+      width: 60px;
+      
   
       i {
           font-size: 30px;
           padding: 0 20px 0 0;
       }
+
+      .fa-handshake {
+        transform: rotate(-25deg);
+      }
+
   
     }
   
@@ -34,7 +43,13 @@
   
     li {
       padding: 0 0 15px 0;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        
+      }
     }
   
-    
-  }
+}  
+  

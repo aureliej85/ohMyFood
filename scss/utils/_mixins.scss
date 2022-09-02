@@ -6,10 +6,11 @@
   }
   
   @mixin btn--gradient {
-    width: 550px;
-    height: 120px;
+    min-width: 500px;
+    /*height: 120px;*/
+    padding: 50px;
     background-image: linear-gradient($secondaire, $primaire);
-    border-radius: 50px;
+    border-radius: 70px;
     border: none;
     font: 400 40px "Roboto";
     color: white;

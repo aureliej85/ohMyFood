@@ -73,6 +73,13 @@
       margin-top: 60px;
       display: flex;
       flex-direction: column;
+
+      a {
+        
+          text-decoration: none;
+
+        
+      }
   
       &__unite {
         width: 100%;
@@ -131,4 +138,6 @@
         }
       }
     }
+
+    
   }
