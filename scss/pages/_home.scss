@@ -124,16 +124,36 @@
           }
   
           &__icon {
-            font-size: 70px;
-            background: none;
-  
-            transition: all 0.5s ease-in;
-  
-           
-            &:hover ::before {
-             @include heart;
-               
+            
+              .far {
+                position: absolute;
+              font-size: 70px;
+              right: 60px;
+                opacity: 1;
+                transition: opacity 0.5s ease-in;
+
+                &:hover {
+                  opacity: 0;
+                }
+              }
+
+              .fas {
+                position: absolute;
+              font-size: 70px;
+              right: 60px;
+              background: -webkit-linear-gradient(top, $primaire, $secondaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+                opacity: 0;
+                transition: opacity 0.5s ease-out;
+                &:hover {
+                  opacity: 1;
+                }
+              
+
             }
+            
           }
         }
       }

@@ -1,0 +1,113 @@
+
+/***** LOADER *****/
+
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #fff;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  animation: opacity-anim 3s forwards;
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    &::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $primaire transparent $secondaire transparent;
+    animation: lds-dual-ring 3s forwards;
+   
+    }
+  }
+}
+
+
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+      left: -9999px;
+    }
+  }
+
+  @keyframes opacity-anim {
+    0% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+    100% {
+     
+      opacity: 0;
+      left: -9999px;
+    }
+  }
+
+
+
+/***** PAGES MENUS *****/ 
+
+@keyframes menus-coming {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+}
+
+
+/***** CARDS MENUS *****/
+
+@keyframes menus-check {
+  0%{
+    transform: translateX(100px);
+    display: inline-block;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menus-check-out {
+  0%{
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+    display: none;
+  }
+}
+
+@keyframes menus-rotate {
+  0% {
+    transform: translateX(50px) rotate(0deg);
+ 
+  }
+  100% {
+    transform: translateX(-00px) rotate(360deg);
+  
+  }
+}
+
+
