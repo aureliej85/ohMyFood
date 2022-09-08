@@ -205,6 +205,32 @@
 .footer li a {
   text-decoration: none;
 }
+@media screen and (min-width: 993px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__title {
+    font-size: 3vw;
+  }
+  .footer__icon {
+    width: 30px;
+  }
+  .footer__icon i {
+    font-size: 20px;
+    padding: 0 5px 0 0;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+  .footer ul li {
+    margin-right: 18px;
+  }
+}
 
 .bouton, .main-menu button, .header button {
   min-width: 500px;
@@ -309,6 +335,36 @@
   font-size: 50px;
   padding: 60px 50px 60px 80px;
   color: grey;
+}
+@media screen and (min-width: 993px) {
+  .fonctionnement__titre {
+    font-size: 40px;
+  }
+  .fonctionnement__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .fonctionnement__card {
+    width: 30%;
+  }
+  .fonctionnement__card span {
+    min-width: 35px;
+    min-height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  .fonctionnement__card div {
+    font-size: 30px;
+    margin-left: -15px;
+    font-size: 1.7vw;
+    height: 8vw;
+  }
+  .fonctionnement__card div i {
+    font-size: 1.4vw;
+    padding: 3.5vw 0.5vw 5vw 2.7vw;
+  }
 }
 
 .restaurants {
@@ -425,18 +481,18 @@
     height: 220px;
   }
   .restaurants__cards__unite__new {
-    margin-top: 10px;
-    width: 10%;
+    margin: 10px 0 0 20px;
+    width: 7%;
     left: unset;
-    font-size: 20px;
+    font-size: 15px;
     padding: 8px 1px 8px 4px;
   }
   .restaurants__cards__unite__caption {
-    font-size: 25px;
+    font-size: 20px;
     padding: 15px;
   }
   .restaurants__cards__unite__caption h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .restaurants__cards__unite__caption__icon {
     text-align: left;
@@ -515,6 +571,14 @@
 }
 .menus__titleBar__icon .fas:hover {
   opacity: 1;
+}
+@media screen and (min-width: 993px) {
+  .menus__titleBar {
+    justify-content: center;
+  }
+  .menus__titleBar__title {
+    font-size: 25px;
+  }
 }
 
 .menu {
@@ -617,6 +681,36 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 993px) {
+  .menu {
+    width: 31%;
+  }
+  .menu h2 {
+    font-size: 25px;
+  }
+  .menu__card {
+    font-size: 1.3vw;
+    height: 140px;
+  }
+  .menu__card:hover .menu__card__anim {
+    width: 35%;
+    right: 0px;
+  }
+  .menu__card:hover .menu__card__anim .fa-circle-check {
+    font-size: 40px;
+    line-height: 140px;
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .all-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
 }
 
 article,

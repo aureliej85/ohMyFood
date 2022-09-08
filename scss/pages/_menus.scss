@@ -62,6 +62,16 @@
       }
     }
   }
+
+  @include desktop {
+    &__titleBar {
+      justify-content: center;
+      &__title {
+        font-size: 25px;
+      }
+    
+    }
+  }
 }
 
 .menu {
@@ -170,5 +180,41 @@
         }
       }
     }
+  }
+
+  @include desktop {
+    width: 31%;
+    h2 {
+      font-size: 25px;
+    }
+    &__card {
+      font-size: 1.3vw;
+      height: 140px;
+      &:hover{
+        .menu__card__anim {
+         
+            width: 35%;
+            right: 0px;
+
+            .fa-circle-check{
+              font-size: 40px;
+              line-height: 140px;
+              margin: 0 10px 0 10px;
+            }
+          }
+          
+        }
+
+      }
+      
+    
+  }
+}
+
+.all-menus {
+  @include desktop {
+    @include flexbox(row);
+    justify-content: space-between;
+    box-sizing: border-box;
   }
 }
