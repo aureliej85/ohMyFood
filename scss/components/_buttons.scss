@@ -15,4 +15,12 @@
       lighten($primary, 5%)
     );
   }
+  
+
+  @include desktop {
+    
+      font-size: 25px;
+      padding: 30px;
+    
+  }
 }

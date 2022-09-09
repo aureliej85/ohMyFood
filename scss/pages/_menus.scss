@@ -69,6 +69,17 @@
       &__title {
         font-size: 25px;
       }
+      &__icon {
+        align-items: center;
+        .far{
+            font-size: 40px;
+            top: 112px;
+        }
+        .fas{
+          font-size: 40px;
+          top: 112px;
+        }
+      }
     
     }
   }
@@ -191,10 +202,12 @@
       font-size: 1.3vw;
       height: 140px;
       &:hover{
+        
         .menu__card__anim {
          
             width: 35%;
             right: 0px;
+            margin-left: 10px;
 
             .fa-circle-check{
               font-size: 40px;
