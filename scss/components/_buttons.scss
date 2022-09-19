@@ -1,10 +1,10 @@
 .bouton {
-  min-width: 500px;
-  padding: 50px;
+  min-width: 200px;
+  padding: 17px;
   background-image: linear-gradient($secondary, $primary);
   border-radius: 70px;
   border: none;
-  font: 400 40px "Roboto";
+  font: 400 17px "Roboto";
   color: white;
   box-shadow: 0px 3px 10px 3px $shadowColor;
   transition: all 0.3s ease-in-out;
@@ -15,12 +15,9 @@
       lighten($primary, 5%)
     );
   }
-  
 
   @include desktop {
-    
-      font-size: 25px;
-      padding: 30px;
-    
+    font-size: 25px;
+    padding: 30px;
   }
 }

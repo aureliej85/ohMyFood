@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./base/normalize";
 @import "./utils/mixins";
 @import "./base/typographie";
 @import "./base/animations";
@@ -7,4 +8,4 @@
 @import "./components/buttons";
 @import "./pages/home";
 @import "./pages/menus";
-@import "./base/normalize";
+

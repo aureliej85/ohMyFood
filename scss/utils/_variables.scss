@@ -7,8 +7,9 @@ $text-color-light: white;
 $title-color: #1c1c1c;
 $footer-background: #333333;
 $breakpoints: (
-    mobile-max: 767.98px,
-    tablet-min: 768px,
-    tablet-max: 991.98px,
-    desktop-min: 992px
+  mobile-xs: 375px,
+  mobile-max: 767.98px,
+  tablet-min: 768px,
+  tablet-max: 991.98px,
+  desktop-min: 992px,
 );

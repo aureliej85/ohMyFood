@@ -2,20 +2,20 @@
   @include flexbox(column);
   width: 100%;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 30px;
   background-color: $footer-background;
 
   &__title {
-    @include texte(Shrikhand, 45px, 900, $text-color-light);
+    @include texte(Shrikhand, 20px, 900, $text-color-light);
   }
 
   &__icon {
     display: inline-block;
-    width: 60px;
+    width: 30px;
 
     i {
-      font-size: 30px;
-      padding: 0 20px 0 0;
+      font-size: 15px;
+      padding: 0px;
     }
 
     .fa-handshake {
@@ -27,11 +27,11 @@
     padding: 0px;
     list-style-type: none;
 
-    @include texte(Roboto, 40px, 400, white);
+    @include texte(Roboto, 17px, 400, white);
   }
 
   li {
-    padding: 0 0 15px 0;
+    padding: 0 0 10px 0;
     text-decoration: none;
 
     a {
@@ -42,12 +42,9 @@
   @include desktop {
     @include flexbox(row);
     justify-content: space-between;
-    
 
     &__title {
       font-size: 3vw;
-    
-      
     }
 
     &__icon {

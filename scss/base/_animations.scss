@@ -1,35 +1,31 @@
-
 /***** LOADER *****/
 
-  @keyframes lds-dual-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-      opacity: 0;
-      left: -9999px;
-    }
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    left: -9999px;
+  }
+}
+
+@keyframes opacity-anim {
+  0% {
+    opacity: 1;
   }
 
-  @keyframes opacity-anim {
-    0% {
-      opacity: 1;
-    }
-
-    90% {
-      opacity: 1;
-    }
-    100% {
-     
-      opacity: 0;
-      left: -9999px;
-    }
+  90% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+    left: -9999px;
+  }
+}
 
-
-
-/***** PAGES MENUS *****/ 
+/***** PAGES MENUS *****/
 
 @keyframes menus-coming {
   0% {
@@ -40,15 +36,13 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
-
   }
 }
-
 
 /***** CARDS MENUS *****/
 
 @keyframes menus-check {
-  0%{
+  0% {
     transform: translateX(100px);
     display: inline-block;
   }
@@ -58,7 +52,7 @@
 }
 
 @keyframes menus-check-out {
-  0%{
+  0% {
     transform: translateX(0px);
   }
   100% {
@@ -70,12 +64,8 @@
 @keyframes menus-rotate {
   0% {
     transform: translateX(50px) rotate(0deg);
- 
   }
   100% {
     transform: translateX(-00px) rotate(360deg);
-  
   }
 }
-
-
